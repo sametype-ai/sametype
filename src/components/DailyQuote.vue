@@ -20,19 +20,25 @@
       <p class="quote-author">— {{ quote.author }}</p>
     </div>
 
-    <button class="refresh-btn" @click="refreshQuote" :class="{ spinning: isSpinning }">
-      <span class="refresh-icon">↻</span>
-      다른 명언 보기
-    </button>
+    <div class="btn-group">
+      <button class="refresh-btn" @click="refreshQuote" :class="{ spinning: isSpinning }">
+        <span class="refresh-icon">↻</span>
+        다른 명언 보기
+      </button>
+      <button class="copy-btn" @click="copyQuote">
+        <span>{{ copied ? '✓ 복사됨' : '복사' }}</span>
+      </button>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed } from 'vue'
 import { quotes, getDailyQuote } from '../quotes.js'
 
 const currentQuote = ref(getDailyQuote())
 const isSpinning = ref(false)
+const copied = ref(false)
 
 const quote = computed(() => currentQuote.value)
 
@@ -74,6 +80,13 @@ function refreshQuote() {
   setTimeout(() => {
     isSpinning.value = false
   }, 500)
+}
+
+async function copyQuote() {
+  const text = `"${quote.value.text}" — ${quote.value.author}`
+  await navigator.clipboard.writeText(text)
+  copied.value = true
+  setTimeout(() => { copied.value = false }, 2000)
 }
 </script>
 
@@ -231,6 +244,33 @@ function refreshQuote() {
 
 .refresh-btn.spinning .refresh-icon {
   transform: rotate(360deg);
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.copy-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 480px) {
