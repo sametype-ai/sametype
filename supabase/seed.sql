@@ -23,7 +23,8 @@ insert into tags (name_en, name_ko, slug) values
   ('Dreams',     '꿈',     'dreams'),
   ('Perseverance','인내',  'perseverance'),
   ('Change',     '변화',   'change'),
-  ('Self',       '자아',   'self')
+  ('Self',       '자아',   'self'),
+  ('Courage',    '용기',   'courage')
 on conflict (slug) do nothing;
 
 -- ============================================================
