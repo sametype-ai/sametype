@@ -50,6 +50,7 @@ declare
   tag_perseverance uuid;
   tag_change uuid;
   tag_self uuid;
+  tag_courage uuid;
 begin
   select id into cat_motivation  from categories where slug = 'motivation';
   select id into cat_philosophy  from categories where slug = 'philosophy';
@@ -67,6 +68,7 @@ begin
   select id into tag_perseverance from tags where slug = 'perseverance';
   select id into tag_change      from tags where slug = 'change';
   select id into tag_self        from tags where slug = 'self';
+  select id into tag_courage     from tags where slug = 'courage';
 
   -- 1. Henry Ford
   insert into quotes (author_en, author_ko, category_id) values ('Henry Ford', '헨리 포드', cat_motivation) returning id into q_id;
