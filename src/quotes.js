@@ -26,6 +26,7 @@ function mapQuote(q, language = 'en') {
 }
 
 export async function fetchAllQuotes(language = 'en') {
+  if (!supabase) return []
   const { data, error } = await supabase
     .from('quotes')
     .select(QUOTES_QUERY)
@@ -36,6 +37,7 @@ export async function fetchAllQuotes(language = 'en') {
 }
 
 export async function getDailyQuote(language = 'en') {
+  if (!supabase) return null
   const { data, error } = await supabase
     .from('quotes')
     .select(QUOTES_QUERY)
@@ -51,10 +53,12 @@ export async function getDailyQuote(language = 'en') {
 }
 
 export async function incrementViewCount(quoteId) {
+  if (!supabase) return
   await supabase.rpc('increment_view_count', { quote_id: quoteId })
 }
 
 export async function toggleLike(quoteId, sessionId) {
+  if (!supabase) return false
   const { data: existing } = await supabase
     .from('quote_likes')
     .select('id')
