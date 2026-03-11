@@ -104,14 +104,18 @@ const formattedDate = computed(() => {
 })
 
 onMounted(async () => {
-  const [daily, all] = await Promise.all([getDailyQuote(), fetchAllQuotes()])
-  allQuotes.value = all
-  currentQuote.value = daily
-  isLoading.value = false
-
-  if (daily?.id) {
-    isLiked.value = !!localStorage.getItem(getLikedKey(daily.id))
-    incrementViewCount(daily.id)
+  try {
+    const [daily, all] = await Promise.all([getDailyQuote(), fetchAllQuotes()])
+    allQuotes.value = all
+    currentQuote.value = daily
+    if (daily?.id) {
+      isLiked.value = !!localStorage.getItem(getLikedKey(daily.id))
+      incrementViewCount(daily.id)
+    }
+  } catch (e) {
+    console.error('Failed to load quotes:', e)
+  } finally {
+    isLoading.value = false
   }
 })
 
