@@ -1,127 +1,127 @@
 export const quotes = [
   {
-    text: "당신이 할 수 있다고 믿든, 할 수 없다고 믿든, 당신의 믿음이 맞습니다.",
-    author: "헨리 포드"
+    text: "Whether you think you can, or you think you can't – you're right.",
+    author: "Henry Ford"
   },
   {
-    text: "천 리 길도 한 걸음부터.",
-    author: "노자"
+    text: "A journey of a thousand miles begins with a single step.",
+    author: "Laozi"
   },
   {
-    text: "성공은 최종이 아니며, 실패는 치명적이지 않습니다. 중요한 것은 계속 나아가는 용기입니다.",
-    author: "윈스턴 처칠"
+    text: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    author: "Winston Churchill"
   },
   {
-    text: "당신의 시간은 한정되어 있습니다. 다른 사람의 삶을 사는 데 낭비하지 마세요.",
-    author: "스티브 잡스"
+    text: "Your time is limited, so don't waste it living someone else's life.",
+    author: "Steve Jobs"
   },
   {
-    text: "오늘 할 수 있는 일을 내일로 미루지 말라.",
-    author: "벤저민 프랭클린"
+    text: "Never put off till tomorrow what you can do today.",
+    author: "Benjamin Franklin"
   },
   {
-    text: "가장 어두운 밤도 끝나고 태양은 다시 뜰 것입니다.",
-    author: "빅토르 위고"
+    text: "Even the darkest night will end and the sun will rise.",
+    author: "Victor Hugo"
   },
   {
-    text: "자신을 이기는 자가 가장 강한 자이다.",
-    author: "노자"
+    text: "He who conquers himself is the mightiest warrior.",
+    author: "Confucius"
   },
   {
-    text: "꿈을 꿀 수 있다면, 그 꿈을 이룰 수도 있습니다.",
-    author: "월트 디즈니"
+    text: "All our dreams can come true, if we have the courage to pursue them.",
+    author: "Walt Disney"
   },
   {
-    text: "배움에는 끝이 없다. 멈추는 순간 뒤처진다.",
-    author: "공자"
+    text: "Learning without thought is labor lost; thought without learning is perilous.",
+    author: "Confucius"
   },
   {
-    text: "행복은 당신이 생각하는 것, 말하는 것, 행동하는 것이 조화를 이룰 때 찾아옵니다.",
-    author: "마하트마 간디"
+    text: "Happiness is when what you think, what you say, and what you do are in harmony.",
+    author: "Mahatma Gandhi"
   },
   {
-    text: "실패는 성공으로 가는 길의 일부일 뿐입니다.",
-    author: "알버트 아인슈타인"
+    text: "Failure is just part of the process, and it's not just okay, it's better than okay.",
+    author: "Albert Einstein"
   },
   {
-    text: "지금 이 순간이 당신의 인생에서 가장 아름다운 날입니다.",
-    author: "오프라 윈프리"
+    text: "The biggest adventure you can take is to live the life of your dreams.",
+    author: "Oprah Winfrey"
   },
   {
-    text: "고통이 없으면 얻는 것도 없다.",
-    author: "벤저민 프랭클린"
+    text: "No pain, no gain.",
+    author: "Benjamin Franklin"
   },
   {
-    text: "인생은 자전거 타기와 같습니다. 균형을 유지하려면 계속 움직여야 합니다.",
-    author: "알버트 아인슈타인"
+    text: "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+    author: "Albert Einstein"
   },
   {
-    text: "당신이 포기하지 않는 한, 당신은 실패하지 않습니다.",
-    author: "엘버트 허버드"
+    text: "You are not defeated when you lose. You are defeated when you quit.",
+    author: "Elbert Hubbard"
   },
   {
-    text: "작은 시작을 두려워하지 마세요. 모든 위대한 것도 작게 시작했습니다.",
-    author: "사무엘 스마일스"
+    text: "Do not be afraid of small beginnings. All great things have small starts.",
+    author: "Samuel Smiles"
   },
   {
-    text: "오늘 하루를 열심히 사는 것이 내일을 준비하는 가장 좋은 방법입니다.",
-    author: "H. 잭슨 브라운 주니어"
+    text: "The best preparation for tomorrow is doing your best today.",
+    author: "H. Jackson Brown Jr."
   },
   {
-    text: "변화를 두려워하지 마세요. 변화는 성장의 어머니입니다.",
-    author: "리오 버스카글리아"
+    text: "Don't be afraid of change. Change is the mother of growth.",
+    author: "Leo Buscaglia"
   },
   {
-    text: "당신의 태도가 당신의 고도를 결정합니다.",
-    author: "지그 지글러"
+    text: "Your attitude determines your altitude.",
+    author: "Zig Ziglar"
   },
   {
-    text: "지식은 힘이다.",
-    author: "프랜시스 베이컨"
+    text: "Knowledge is power.",
+    author: "Francis Bacon"
   },
   {
-    text: "낙관주의자는 모든 어려움에서 기회를 봅니다.",
-    author: "윈스턴 처칠"
+    text: "A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty.",
+    author: "Winston Churchill"
   },
   {
-    text: "용감한 사람만이 진정한 행복을 얻을 수 있습니다.",
-    author: "아리스토텔레스"
+    text: "Courage is the first of human qualities because it is the quality which guarantees all others.",
+    author: "Aristotle"
   },
   {
-    text: "위대한 일을 이루려면, 행동해야 할 뿐 아니라 꿈을 꿔야 합니다.",
-    author: "아나톨 프랑스"
+    text: "To accomplish great things, we must not only act, but also dream.",
+    author: "Anatole France"
   },
   {
-    text: "자신을 사랑하는 것이 평생 지속되는 로맨스의 시작입니다.",
-    author: "오스카 와일드"
+    text: "To love oneself is the beginning of a lifelong romance.",
+    author: "Oscar Wilde"
   },
   {
-    text: "모든 날이 좋은 날은 아닙니다. 하지만 모든 날 안에는 좋은 것이 있습니다.",
-    author: "앨리스 모스 얼"
+    text: "Not every day is a good day, but there is something good in every day.",
+    author: "Alice Morse Earle"
   },
   {
-    text: "멈추지 않는 한, 얼마나 천천히 가더라도 상관없습니다.",
-    author: "공자"
+    text: "It does not matter how slowly you go as long as you do not stop.",
+    author: "Confucius"
   },
   {
-    text: "당신이 무언가를 진심으로 원한다면, 온 우주가 당신이 그것을 이루도록 도울 것입니다.",
-    author: "파울로 코엘료"
+    text: "When you want something, all the universe conspires in helping you to achieve it.",
+    author: "Paulo Coelho"
   },
   {
-    text: "인생의 의미는 당신의 재능을 발견하는 것입니다. 인생의 목적은 그것을 나누는 것입니다.",
-    author: "파블로 피카소"
+    text: "The meaning of life is to find your gift. The purpose of life is to give it away.",
+    author: "Pablo Picasso"
   },
   {
-    text: "할 수 있다고 생각하면 할 수 있습니다. 못한다고 생각하면 못합니다.",
-    author: "마리 퀴리"
+    text: "You can, you should, and if you're brave enough to start, you will.",
+    author: "Marie Curie"
   },
   {
-    text: "오늘을 즐기세요. 어제는 이미 지나갔고 내일은 아직 오지 않았습니다.",
-    author: "데일 카네기"
+    text: "Enjoy today. Yesterday is gone and tomorrow has not yet come.",
+    author: "Dale Carnegie"
   },
   {
-    text: "시작이 반이다.",
-    author: "아리스토텔레스"
+    text: "Well begun is half done.",
+    author: "Aristotle"
   }
 ]
 
